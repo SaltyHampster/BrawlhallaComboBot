@@ -4,11 +4,12 @@
 #include "Keypresses.hpp"
 #include "slimwin.hpp"
 #include <string>
+#include <thread>
 
 using std::cout;
 using std::cin;
 
-DWORD WINAPI BrawlComboBot(HMODULE hModule)
+DWORD WINAPI BrawlComboBot(static HMODULE hModule)
 {
 
     using std::string;
@@ -21,16 +22,18 @@ DWORD WINAPI BrawlComboBot(HMODULE hModule)
     freopen_s(&fDummy, "CONOUT$", "w", stdout);
     freopen_s(&fDummy, "CONOUT$", "w", stderr);
     freopen_s(&fDummy, "CONIN$", "r", stdin);
-
-    string character;
-
-    cout << "Brawlhalla Combobot v0.0.1" << endl << "Supported Characters:" << endl << "Hattori" << endl << endl << "That´s about it for now!";
+    
+    system("title Brawlhalla Combobot");
+    
+    
+    cout << "Brawlhalla Combobot v0.0.1" << endl << "To select a character press (K)" << endl << "To end the Program press (END)" << endl;
 
     while (true)
     {
         //Main Program
-        
-        
+        if (GetAsyncKeyState(VK_KEY_K)) {
+            CharacterSelection();
+        }
 
         if (GetAsyncKeyState(VK_END) & 1)
         {
@@ -38,12 +41,14 @@ DWORD WINAPI BrawlComboBot(HMODULE hModule)
         }
     }
 
-    //uninject the dll
-    cout << "Uninjected Successful";
+    cout << std::endl << "Program Closed" << std::endl << "Uninjected Successful";
+
+    fclose(fDummy);
     FreeConsole();
     FreeLibraryAndExitThread(hModule, 0);
     
 }
+
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)
 {

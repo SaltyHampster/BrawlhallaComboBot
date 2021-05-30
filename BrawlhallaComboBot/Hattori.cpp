@@ -3,20 +3,27 @@
 
 #define WIN32_LEAN_AND_MEAN
 
+#include <iostream>
 #include "slimwin.hpp"
 #include "Keypresses.hpp"
 
 
-int Hattori() {
+void Hattori() {
+	
+	using std::endl;
+
+	std::cout << endl << "To select a new Character Press (K)" << endl;
+
 	while (true) {
 
-		if (GetAsyncKeyState(VK_KEY_A)) {
+		if (GetAsyncKeyState(VK_KEY_Q)) {
 		}
 
-		if (GetAsyncKeyState(VK_NUMPAD0)) {
+		if (GetAsyncKeyState(VK_KEY_K) & 1) {
 			break;
 		}
+
+
 	}
-	return 0;
 }
 

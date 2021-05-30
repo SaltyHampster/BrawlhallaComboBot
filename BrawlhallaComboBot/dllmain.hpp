@@ -6,4 +6,8 @@
 #include <iostream>
 #include "Keypresses.hpp"
 
+void CharacterSelection();
+void Hattori();
+
+
 #endif //DLLMAIN_HPP
