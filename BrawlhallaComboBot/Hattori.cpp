@@ -13,10 +13,12 @@ void Hattori() {
 	using std::endl;
 
 	std::cout << endl << "To select a new Character Press (K)" << endl;
+	std::cout << "Current Combos:" << endl;
 
 	while (true) {
 
 		if (GetAsyncKeyState(VK_KEY_Q)) {
+			LeftLight();
 		}
 
 		if (GetAsyncKeyState(VK_KEY_K) & 1) {

@@ -29,7 +29,7 @@ void CharacterSelection() {
         
     }
 
-    else {
+    if (character != "exit" && character != "Exit" && character != "EXIT" && character != "Hattori" && character != "hattori") {
         cout << "Invalid input or Character not supported yet!";
     }
 }
