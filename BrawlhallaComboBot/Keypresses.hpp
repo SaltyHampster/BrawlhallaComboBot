@@ -29,6 +29,11 @@
 #define VK_KEY_Y 0x59
 #define VK_KEY_Z 0x5A
 
+
+void NeutralLight();
+void NeutralHeavy();
+void GravityNeutralLight();
+void GravityNeutralHeavy();
 void LeftLight();
 void LeftHeavy();
 void GravityLeftLight();
@@ -45,5 +50,6 @@ void DownLight();
 void DownHeavy();
 void GravityDownLight();
 void GravityDownHeavy();
+void Delay(int);
 
 #endif //KEYPRESSES_HPP

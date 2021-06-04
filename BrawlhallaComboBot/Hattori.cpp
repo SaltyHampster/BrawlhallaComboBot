@@ -18,7 +18,11 @@ void Hattori() {
 	while (true) {
 
 		if (GetAsyncKeyState(VK_KEY_Q)) {
-			LeftLight();
+			GravityLeftLight();
+			Delay(500);
+			GravityDownHeavy();
+			Delay(1000);
+			RightHeavy();
 		}
 
 		if (GetAsyncKeyState(VK_KEY_K) & 1) {
