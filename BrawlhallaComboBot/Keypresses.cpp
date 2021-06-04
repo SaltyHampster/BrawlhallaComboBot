@@ -2,7 +2,6 @@
 #include "Keypresses.hpp"
 #include "slimwin.hpp"
 
-
 void NeutralLight() {
 	INPUT inputs[2] = {};
 	ZeroMemory(inputs, sizeof(inputs));
@@ -171,10 +170,10 @@ void RightLight() {
 	inputs[0].ki.wVk = VK_RIGHT;
 
 	inputs[1].type = INPUT_KEYBOARD;
-	inputs[1].ki.wVk = VK_KEY_X;
+	inputs[1].ki.wVk = VK_KEY_C;
 
 	inputs[2].type = INPUT_KEYBOARD;
-	inputs[2].ki.wVk = VK_KEY_X;
+	inputs[2].ki.wVk = VK_KEY_C;
 	inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
 
 	inputs[3].type = INPUT_KEYBOARD;
@@ -191,10 +190,10 @@ void RightHeavy() {
 	inputs[0].ki.wVk = VK_RIGHT;
 
 	inputs[1].type = INPUT_KEYBOARD;
-	inputs[1].ki.wVk = VK_KEY_C;
+	inputs[1].ki.wVk = VK_KEY_X;
 
 	inputs[2].type = INPUT_KEYBOARD;
-	inputs[2].ki.wVk = VK_KEY_C;
+	inputs[2].ki.wVk = VK_KEY_X;
 	inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
 
 	inputs[3].type = INPUT_KEYBOARD;
@@ -423,24 +422,34 @@ void GravityDownHeavy() {
 	ZeroMemory(inputs, sizeof(inputs));
 
 	inputs[0].type = INPUT_KEYBOARD;
-	inputs[0].ki.wVk = VK_DOWN;
+	inputs[0].ki.wVk = VK_SHIFT;
+
+	Delay(10);
 
 	inputs[1].type = INPUT_KEYBOARD;
-	inputs[1].ki.wVk = VK_SHIFT;
+	inputs[1].ki.wVk = VK_DOWN;
+
+	Delay(10);
 
 	inputs[2].type = INPUT_KEYBOARD;
 	inputs[2].ki.wVk = VK_KEY_X;
+
+	Delay(10);
 
 	inputs[3].type = INPUT_KEYBOARD;
 	inputs[3].ki.wVk = VK_KEY_X;
 	inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+	Delay(10);
+
 	inputs[4].type = INPUT_KEYBOARD;
-	inputs[4].ki.wVk = VK_SHIFT;
+	inputs[4].ki.wVk = VK_DOWN;
 	inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
 
+	Delay(10);
+
 	inputs[5].type = INPUT_KEYBOARD;
-	inputs[5].ki.wVk = VK_DOWN;
+	inputs[5].ki.wVk = VK_SHIFT;
 	inputs[5].ki.dwFlags = KEYEVENTF_KEYUP;
 
 	UINT uSent = SendInput(ARRAYSIZE(inputs), inputs, sizeof(INPUT));
