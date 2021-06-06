@@ -2,34 +2,47 @@
 #include "Keypresses.hpp"
 #include "slimwin.hpp"
 #include "dllmain.hpp"
-#include <string>
 
 using std::cout;
 using std::cin;
+using std::string;
 
-void CharacterSelection() {
+void CharacterSelection(HANDLE comboBotConsole) {
 
-    using std::string;
-    using std::endl;
+    // Add new characters to this vector!
+    std::vector<string> supportedCharacters = {
+        "Hattori"
+    };
 
+    // Character selection screen
     string character;
+    cout << '\n' << "Supported Characters:";
 
-    cout << endl << "Supported Characters:" << endl << "Hattori" << endl << endl << "That is about it for now!" << endl << "Type (exit) to exit the Character Selection." << endl;
+    SetConsoleTextAttribute(comboBotConsole, 12); // Set red text
+    for (auto s : supportedCharacters) {
+        cout << '\n' << s;
+    }
+    SetConsoleTextAttribute(comboBotConsole, 15); // Set white text
+    cout << "\n\n" << "That is about it for now!" << '\n' << "Type (exit) to exit the Character Selection." << '\n';
     cin >> character;
 
-    if (character == "Hattori" || character == "hattori") {
+    // Put their selection to lower case so we only have to check lowercase
+    string choice = "";
+    for (auto c : character) {
+        choice += std::tolower(c);
+    }
+
+    // Act on input
+    if (choice == "hattori") {
         cout << "You have successfully selected Hattori";
         Hattori();
     }
-
-    if (character == "exit" || character == "Exit" || character == "EXIT") {
+    else if (choice == "exit") {
         system("cls");
-        cout << "Back to main Menu we go!" << endl;
-        cout << endl << "To select a character press (K)" << endl << "To end the Program press (END)" << endl;
-        
+        cout << "Back to main Menu we go!" << '\n';
+        cout << '\n' << "To select a character press (K)" << '\n' << "To end the Program press (END)" << '\n';
     }
-
-    if (character != "exit" && character != "Exit" && character != "EXIT" && character != "Hattori" && character != "hattori") {
-        cout << "Invalid input or Character not supported yet!";
+    else {
+        cout << "Invalid input!";
     }
 }
