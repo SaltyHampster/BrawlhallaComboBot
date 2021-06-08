@@ -2,11 +2,10 @@
 #define DLLMAIN_HPP
 #pragma once
 
-#include <cstdio>
-#include <iostream>
+#include "pch.h"
 #include "Keypresses.hpp"
 
-void CharacterSelection();
+void CharacterSelection(HANDLE comboBotConsole);
 void Hattori();
 
 

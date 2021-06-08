@@ -9,5 +9,10 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include <string>
+#include <cstdio>
+#include <iostream>
+#include <vector>
+#include <thread>
 
 #endif //PCH_HPP
