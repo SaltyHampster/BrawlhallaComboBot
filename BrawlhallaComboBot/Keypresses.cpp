@@ -9,6 +9,8 @@ void NeutralLight() {
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_C;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
@@ -21,6 +23,8 @@ void NeutralHeavy() {
 
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
@@ -35,12 +39,18 @@ void GravityNeutralLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_SHIFT;
@@ -55,12 +65,18 @@ void GravityNeutralHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_SHIFT;
@@ -75,12 +91,18 @@ void LeftLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_LEFT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_LEFT;
@@ -95,12 +117,18 @@ void LeftHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_LEFT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_LEFT;
@@ -115,19 +143,29 @@ void GravityLeftLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_LEFT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_KEY_C;
     inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+    Delay(10);
+
     inputs[4].type = INPUT_KEYBOARD;
     inputs[4].ki.wVk = VK_SHIFT;
     inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[5].type = INPUT_KEYBOARD;
     inputs[5].ki.wVk = VK_LEFT;
@@ -142,19 +180,29 @@ void GravityLeftHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_LEFT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_KEY_X;
     inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+    Delay(10);
+
     inputs[4].type = INPUT_KEYBOARD;
     inputs[4].ki.wVk = VK_SHIFT;
     inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[5].type = INPUT_KEYBOARD;
     inputs[5].ki.wVk = VK_LEFT;
@@ -169,12 +217,18 @@ void RightLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_RIGHT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_RIGHT;
@@ -189,12 +243,18 @@ void RightHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_RIGHT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_RIGHT;
@@ -209,19 +269,29 @@ void GravityRightLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_RIGHT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_KEY_C;
     inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+    Delay(10);
+
     inputs[4].type = INPUT_KEYBOARD;
     inputs[4].ki.wVk = VK_SHIFT;
     inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[5].type = INPUT_KEYBOARD;
     inputs[5].ki.wVk = VK_RIGHT;
@@ -236,19 +306,29 @@ void GravityRightHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_RIGHT;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_KEY_X;
     inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+    Delay(10);
+
     inputs[4].type = INPUT_KEYBOARD;
     inputs[4].ki.wVk = VK_SHIFT;
     inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[5].type = INPUT_KEYBOARD;
     inputs[5].ki.wVk = VK_RIGHT;
@@ -263,12 +343,18 @@ void UpLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_UP;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_UP;
@@ -283,12 +369,18 @@ void UpHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_UP;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_UP;
@@ -303,19 +395,29 @@ void GravityUpLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_UP;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_KEY_C;
     inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+    Delay(10);
+
     inputs[4].type = INPUT_KEYBOARD;
     inputs[4].ki.wVk = VK_SHIFT;
     inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[5].type = INPUT_KEYBOARD;
     inputs[5].ki.wVk = VK_UP;
@@ -330,19 +432,29 @@ void GravityUpHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_UP;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_KEY_X;
     inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+    Delay(10);
+
     inputs[4].type = INPUT_KEYBOARD;
     inputs[4].ki.wVk = VK_SHIFT;
     inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[5].type = INPUT_KEYBOARD;
     inputs[5].ki.wVk = VK_UP;
@@ -357,12 +469,18 @@ void DownLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_DOWN;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_DOWN;
@@ -377,12 +495,18 @@ void DownHeavy() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_DOWN;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_KEY_X;
+
+    Delay(10);
 
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_X;
     inputs[2].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_DOWN;
@@ -397,19 +521,29 @@ void GravityDownLight() {
     inputs[0].type = INPUT_KEYBOARD;
     inputs[0].ki.wVk = VK_DOWN;
 
+    Delay(10);
+
     inputs[1].type = INPUT_KEYBOARD;
     inputs[1].ki.wVk = VK_SHIFT;
 
+    Delay(10);
+
     inputs[2].type = INPUT_KEYBOARD;
     inputs[2].ki.wVk = VK_KEY_C;
+
+    Delay(10);
 
     inputs[3].type = INPUT_KEYBOARD;
     inputs[3].ki.wVk = VK_KEY_C;
     inputs[3].ki.dwFlags = KEYEVENTF_KEYUP;
 
+    Delay(10);
+
     inputs[4].type = INPUT_KEYBOARD;
     inputs[4].ki.wVk = VK_SHIFT;
     inputs[4].ki.dwFlags = KEYEVENTF_KEYUP;
+
+    Delay(10);
 
     inputs[5].type = INPUT_KEYBOARD;
     inputs[5].ki.wVk = VK_DOWN;
