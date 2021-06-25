@@ -11,9 +11,11 @@ void Hattori() {
 
     while (true) {
 
+
+        //Spear Code
         if (GetAsyncKeyState(VK_KEY_U)) {
             while (true) {
-
+                //Left Combo
                 if (GetAsyncKeyState(VK_KEY_Q)) {
                     LeftLight();
                     Delay(750);
@@ -21,7 +23,7 @@ void Hattori() {
                     Delay(750);
                     UpHeavy();
                 }
-
+                //Right Combo
                 if (GetAsyncKeyState(VK_KEY_E)) {
                     RightLight();
                     Delay(750);
@@ -35,9 +37,13 @@ void Hattori() {
                 }
             }
         }
+
+        //Sword Code
+
         if (GetAsyncKeyState(VK_KEY_I)) {
             while (true) {
-
+                //Spear Combos
+                /*
                 if (GetAsyncKeyState(VK_KEY_Q)) {
                     LeftLight();
                     Delay(750);
@@ -56,7 +62,7 @@ void Hattori() {
 
                 if (GetAsyncKeyState(VK_KEY_K) & 1) {
                     break;
-                }
+                }*/
             }
         }
         if (GetAsyncKeyState(VK_KEY_K) & 1) {
