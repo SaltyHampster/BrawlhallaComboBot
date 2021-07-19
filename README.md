@@ -1,8 +1,5 @@
 # BrawlhallaComboBot
-
-Bot-Base works now, first Combo is already available for Hattori
-
-Currently actively Updated, so stay tuned
+Project under Pause again...
 
 THIS PROJECT IS WORK IN PROGRESS!
 
